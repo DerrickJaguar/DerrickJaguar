@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Jaguar Model Grocery is a platform that provides users with a seamless experience of accessing their grocery">
+    <meta name="keywords" content="excellence, service, Aunthenticity and above self commitment" />
+    <meta property="og:title" content="JAGUAR MODEL GROCERRY" />
+    <title>Jaguar Model Grocery| Inventory</title>
+    <link rel="stylesheet" href="css/inventory.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>LIST</header>
+        <ul>
+            <li><a href="dashboard.html"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+            <li><a class="active" href="drs.html"><i class="fas fa-clipboard"></i>Inventory</a></li>
+            <li><a href="accounting.html"><i class="fas fa-calculator"></i>Orders</a></li>
+            <li><a href="disease.html"><i class="fas fa-stethoscope"></i>Settings</a></li>
+            <li><a href="about.html"><i class="fas fa-users"></i>About</a></li>
+            <li class="log_out"><a href="index.html"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
+        </ul>
+    </div>
+    <main class="main">
+        <header class="trial">
+            <div class="occupy">
+            </div>
+            <nav class="nav">
+                <img class="fifo" src="images/market.jpg" alt="market">
+                <p class="nav_para">Authenticity is all we deliver</p>
+            </nav>
+            <img src="images/softdrinks.jpg" alt="chick" class="logo">
+        </header>
+
+        <!--account CARDS-->
+        <div class="bod">
+            <section class="section">
+                <marquee behavior="scroll" bgcolor="#fff" loop="-1" width="80%">
+                    <i>
+       <font color="#440D22">
+          
+         <strong>
+          <span id="time"></span>
+         </strong>           
+       </font>
+    </i>
+                </marquee>
+                <div class="container">
+                    <div class="success hide">
+                        <p class="success_message">Success</p>
+                    </div>
+                    <form id="contact" action="" method="post">
+                        <fieldset>
+                            <input class="drs_birds" placeholder="Tomatoes(crates)" type="number" tabindex="100" required autofocus>
+                        </fieldset>
+                        <fieldset>
+                            <input class="drs_feeds" placeholder="onions(crates)" type="number" tabindex="22" required>
+                        </fieldset>
+                        <fieldset>
+                            <input class="drs_water" placeholder=" Beers(crates)" type="number" tabindex="12" required>
+                        </fieldset>
+                        <fieldset>
+                            <input class="drs_vaccination" placeholder="soft drinks(cartons)" type="number" tabindex="25" required>
+                        </fieldset>
+                        <fieldset>
+                            <input class="drs_drugs" placeholder="Laundry(pieces)" type="number" tabindex="50" required>
+                        </fieldset>
+                        <fieldset>
+                            <input class="drs_mortality" placeholder="Expense" type="number" tabindex="10000000" required>
+                        </fieldset>
+                        <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+            <!--modal display-->
+            <div class="modal hide">
+                <div class="modal sub">
+                    <div class="sbb">
+                        <h1 class="modal_header">Affirmation</h1>
+                        <p class="modal_question">You want to Log out?</p>
+                        <input type="button" name="agree" id="agree" value="Agree" />
+                        <input type="button" name="disagree" id="disagree" value="Disagree" />
+                    </div>
+                </div>
+            </div>
+            <script src="account.js"></script>
+            <script src="modal.js" type="text/javascript" charset="utf-8"></script>
+            <script src="js/inventory.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
